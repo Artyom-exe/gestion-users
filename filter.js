@@ -13,7 +13,7 @@ export const filter = () => {
             <li><a class="dropdown-item" href="#">User</a></li>
           </ul>
         </div>
-        <input type="texte" class="w-25 form-control" placeholder="Recherche"/>
+        <input type="texte" class="w-25 form-control" placeholder="Recherche" name="input-search" id="input-search" />
           <div class="dropdown">
           <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           5 par page
@@ -37,3 +37,11 @@ export const filterBtn = () => {
           })
         });
       }
+
+export const searchUser = () => {
+        const inputSearch = document.querySelector("#input-search");
+        inputSearch.addEventListener("input", () => {
+          let searchValue = inputSearch.value;
+          table(searchValue);
+        })
+}

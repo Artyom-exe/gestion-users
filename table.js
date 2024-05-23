@@ -1,7 +1,7 @@
 import { ligne } from './ligne'
 
-const table = (value) => {
-  console.log(value);
+const table = (value, searchValue) => {
+
   switch (value) {
     case "Admin":
       value = true; 

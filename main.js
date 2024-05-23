@@ -1,4 +1,4 @@
-import { filter, filterBtn } from './filter'
+import { filter, filterBtn, searchUser } from './filter'
 import './style.scss'
 import * as bootstrap from 'bootstrap'
 import table from './table'
@@ -13,3 +13,4 @@ document.querySelector('#app').innerHTML = `
 `
 table();
 filterBtn();
+searchUser();
